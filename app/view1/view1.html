@@ -1,0 +1,52 @@
+<!-- All Vendors data in table and search of Vendors -->
+<!DOCTYPE html>
+
+<h1>All grounds </h1>
+
+    <div ng-app="myApp.view1" ng-controller="View1Ctrl">
+
+<table border="1" width="1000" ng-show="groundFlag">
+
+      <tr>
+            <th>
+            date
+          </th>
+
+            <th>
+          day
+          </th>
+        </tr> 
+          
+        <tr ng-repeat="x in allData.values">
+
+            <td align="center">
+          <a href="#!/view2" ng-click="slot(x.event_data);"> {{x.event_data}}</a>
+          </td>
+
+           <td align="center">
+             {{x.day}}
+          </td>
+
+           <!-- <td align="center">
+            {{x.slot}}
+          </td>  -->
+        </tr>
+    
+      </table>
+
+</div>
+
+
+<!-- 
+          <div ng-control-group="credentials">
+              <input
+                type="text"
+                ng-model="vendorSearch"
+                placeholder="Search the Vendor" ng-keyup="search();"
+                required></br></br>
+ -->
+
+
+
+
+      
